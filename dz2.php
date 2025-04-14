@@ -12,9 +12,9 @@ if (!is_numeric($number2)) {
 fwrite(STDERR, "Введите, пожалуйста, число" . PHP_EOL);
 exit(1);
 }
-if ($number2 == 0);
+if ($number2 == 0); {
 fwrite(STDERR, "Делить на 0 нельзя" . PHP_EOL);
-
+}
 $number = $number1 / $number2;
 
 echo ($number . PHP_EOL);
