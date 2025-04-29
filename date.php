@@ -9,7 +9,7 @@ function workSchedule(int $year, int $month):void {
         return;
     }
 }
-$daysInMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+$daysInMonth = cal_days_in_month(CAL_GREGORIAN, int $month, int $year);
 $monthName = date("F", mktime(0, 0, 0, $month, 1, $year));
 
 echo "График работы на $monthName $year:\n";
