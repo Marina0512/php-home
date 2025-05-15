@@ -18,7 +18,7 @@ $fileExtension = pathinfo($_FILES['content']['name'], PATHINFO_EXTENSION);
 
 $newFileName = $fileName . '.' . $fileExtension;
 
-$filePath = $uplfileDirectore . $newFileName;
+$filePath = $fileDirectore . $newFileName;
 
 if (move_uploaded_file($_FILES['content']['tmp_name'], $filePath)) {
     echo "Файл успешно загружен!<br>";
